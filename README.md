@@ -3,7 +3,7 @@
 A web-based quiz platform supporting multiple question types (MCQ, audio, image-based / Pictionary style), categories (General Knowledge, Technical, Maths & Logic, Audio), admin management, and user/signup flows. Built with PHP, MySQL and vanilla frontend (HTML/CSS/JS).
 
  ## Demo / Live Link
-Live preview:https://github.com/user-attachments/assets/bfd55cbc-74ab-42ac-b9de-910d751859cc
+Live preview:
 Repository: 
 
 ## Features
