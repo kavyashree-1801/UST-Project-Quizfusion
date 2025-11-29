@@ -3,7 +3,8 @@
 A web-based quiz platform supporting multiple question types (MCQ, audio, image-based / Pictionary style), categories (General Knowledge, Technical, Maths & Logic, Audio), admin management, and user/signup flows. Built with PHP, MySQL and vanilla frontend (HTML/CSS/JS).
 
  ## Demo / Live Link
-Live preview:
+Live preview:https://github.com/user-attachments/assets/820039c8-5ab8-48f4-bcce-5f45dafaafc6
+
 Repository: https://github.com/kavyashree-1801/UST-Project-Quizfusion.git
 
 ## Features
