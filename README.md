@@ -38,8 +38,6 @@ quizfusion/
  ┃  ┣ audio/
  ┃  ┗ images/
  ┣ includes/
- ┃  ┣ header.php
- ┃  ┣ footer.php
  ┃  ┗ config.php
  ┣ sql/
  ┃  ┗ quizfusion.sql
@@ -61,11 +59,13 @@ Ensure uploads/ directory exists and is writable.
 If audio doesn't play, confirm the file is .mp3 and MIME type is correct.
 
 ## Future Improvements 
-1. Add Difficulty Levels
-2. Certificates After Quiz Completion
-3. Bookmark / Save Questions
-4. Add Explanations for Answers
-5. AI-Based Question Generation
+1.AI-based question recommendations
+2. Mobile app support
+3.Multiplayer quiz battles
+4.Video-based questions
+5.Certifications
+6.Push notifications
+
 
 
 
