@@ -3,7 +3,7 @@
 A web-based quiz platform supporting multiple question types (MCQ, audio, image-based / Pictionary style), categories (General Knowledge, Technical, Maths & Logic, Audio), admin management, and user/signup flows. Built with PHP, MySQL and vanilla frontend (HTML/CSS/JS).
 
  ## Demo / Live Link
-Live preview:https://github.com/user-attachments/assets/820039c8-5ab8-48f4-bcce-5f45dafaafc6
+Live preview:
 
 Repository:https://github.com/kavyashree-1801/UST-Project-Quizfusion.git
 
@@ -21,30 +21,96 @@ Repository:https://github.com/kavyashree-1801/UST-Project-Quizfusion.git
 | -------- | ------------------------------------------ |
 | Backend  | PHP (procedural)                           |
 | Database | MySQL / MariaDB                            |
-| Frontend | HTML, CSS (Bootstrap optional), JavaScript |
+| Frontend | HTML, CSS (Bootstrap), JavaScript          |
 | Dev/Test | XAMPP / LAMP (local)                       |
 
 ## Folder Structure
-quizfusion/
- ┣ assets/
- ┃  ┣ css/
- ┃  ┣ js/
- ┃  ┗ images/
- ┣ admin/
- ┃  ┣ index.php
- ┃  ┣ manage_questions.php
- ┃  ┗ edit_question.php
- ┣ uploads/
- ┃  ┣ audio/
- ┃  ┗ images/
- ┣ includes/
- ┃  ┗ config.php
- ┣ sql/
- ┃  ┗ quizfusion.sql
- ┣ index.php
- ┣ login.php
- ┣ signup.php
- ┗ README.md
+QuizFusion/
+│
+├── api/                  # API endpoints for quizzes and platform actions
+│   ├── api_audio.php          # Audio-based quiz API
+│   ├── api_gk.php             # General Knowledge quiz API
+│   ├── api_technical.php      # Technical quiz API
+│   ├── api_math_logic.php     # math & logic quiz API
+│   ├── api_pictionary.php     # pictionary quiz API
+│   ├── check_email.php        # Check if email is registered
+│   ├── contact_submit.php     # Handle contact form submissions
+│   ├── feedback_submit.php    # Submit user feedback
+│   ├── get_security_question.php # Fetch security question for password recovery
+│   ├── leaderboards.php       # Fetch leaderboard data
+│   ├── login_api.php          # Login API
+│   ├── register.php           # User registration API
+│   ├── update_profile.php     # Update user profile
+│   ├── user_report.php         # Fetch user quiz report
+│   ├── verify_answer.php      # Verify quiz answers
+│
+├── css/                  # Stylesheets
+│   ├── about.css
+│   ├── audio.css
+│   └── categories.css
+│   └── contact.css
+│   └── forgot_password.css
+│   └── gk.css
+│   └── homepage.css
+│   └── leaderboard.css
+│   └── login.css
+│   └── math_logic.css
+│   └── pictionary.css
+│   └── profile.css
+│   └── register.css
+│   └── technical.css
+│   └── user_report.css
+│
+├── js/                   # JavaScript files
+│ ├── audio.js
+│ ├── categories.js
+│ ├── contact.js
+│ ├── feedback.js
+│ ├── forgot_password.js
+│ ├── homepage.js
+│ ├── leaderboard.js
+│ ├── math_logic.js
+│ ├── pictionary.js
+│ ├── profile.js
+│ ├── register.js
+│ ├── reset_password.js
+│ ├── technical.js
+│ ├── user_report.js
+│ ├── verify_security.js
+│
+├── uploads/               # audio for the quiz
+├── config.php            # Database connection  
+├── register.php
+├── login.php
+├── homepage.php          # Home page
+├── about.php
+├── contact.php
+├── categories.php
+├── feedback.php
+├── leaderboard.php
+├── user_report.php
+├── add_question.php
+├── categories.php
+├── edit_question.php
+├── forgot_password.php
+├── gk.php
+├── logout.php
+├── manage_contact.php
+├── manage_feedback.php
+├── manage_questions.php
+├── manage_user.php
+├── manage_quiz.php
+├── manage_leaderboard.php
+├── pictionary.php
+├── technical.php
+├── audio.php
+├── math_logic.php
+├── profile.php
+├──reset_password.php
+├── verify_security.php
+└── README.md
+
+
 
 ## Installation
 1. Clone the repo.
