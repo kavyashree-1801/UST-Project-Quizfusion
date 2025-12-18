@@ -5,7 +5,7 @@ A web-based quiz platform supporting multiple question types (MCQ, audio, image-
  ## Demo / Live Link
 Live preview:https://github.com/user-attachments/assets/820039c8-5ab8-48f4-bcce-5f45dafaafc6
 
-Repository:https://github.com/kavyashree-1801/UST-Project-Quizfusion.git](https://github.com/kavyashree-1801/UST-Project-Quizfusion.git
+Repository:https://github.com/kavyashree-1801/UST-Project-Quizfusion.git
 
 ## Features
 - User signup/login with role-based access
