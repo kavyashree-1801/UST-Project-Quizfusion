@@ -1,0 +1,212 @@
+:root {
+    --brand: #1a73e8;
+    --text-dark: #111827;
+    --muted: #6b7280;
+}
+
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+
+    /* FULL PAGE BACKGROUND WITH WHITE OVERLAY */
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.25),
+            rgba(255,255,255,0.25)
+        ),
+        url("https://png.pngtree.com/thumb_back/fh260/background/20220110/pngtree-quiz-concept-wooden-letterpress-type-vintage-test-letterpress-photo-image_21052354.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 28px;
+    background: var(--brand);
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
+}
+
+.right-section {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.welcome-text {
+    color: #ffeb3b;
+    font-weight: 700;
+}
+
+.btn {
+    background: white;
+    color: var(--brand);
+    padding: 7px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ================= MAIN ================= */
+.main-container {
+    flex: 1;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* HERO SECTION */
+.hero-wrapper {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 18px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #444;
+    font-size: 18px;
+}
+
+.start-btn {
+    display: inline-block;
+    margin-top: 22px;
+    background: var(--brand);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ================= CARDS ================= */
+.cards {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    width: 220px;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.2);
+}
+
+.icon {
+    font-size: 42px;
+}
+
+.title {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.4;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: var(--brand);
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}

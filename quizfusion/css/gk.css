@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://e1.pxfuel.com/desktop-wallpaper/449/790/desktop-wallpaper-general-knowledge-knowledge.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.quiz-box {
+    background: rgba(0,0,0,0.85);
+    padding: 30px;
+    width: 600px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.options label {
+    display: block;
+    background: #222;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.options input {
+    margin-right: 10px;
+}
+
+.correct {
+    background: #00ff00 !important;
+    color: #000;
+}
+
+.wrong {
+    background: #ff4444 !important;
+    color: #fff;
+}
+
+.btn {
+    background: #ff9900;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    
+}
+
+.hint {
+    display: none;
+    background: #444;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffdd00;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #333;
+    height: 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.progress {
+    height: 100%;
+    background: #ff9900;
+    width: 0%;
+    transition: 0.4s;
+}
+
+.timer {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.result {
+    font-size: 22px;
+    color: #ffdd00;
+    margin-top: 20px;
+}
+.button-row {
+    display: flex;
+    gap: 10px;            /* space between buttons */
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.button-row .btn {
+    flex: 1;              /* optional: make buttons equal width */
+    max-width: 180px;     /* optional max width */
+}

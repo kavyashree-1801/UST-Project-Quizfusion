@@ -1,0 +1,146 @@
+/* ===== BODY ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("https://img.freepik.com/free-vector/hand-drawn-flat-kwanzaa-pattern-design_23-2149189313.jpg?semt=ais_hybrid&w=740&q=80")
+        no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===== QUIZ BOX ===== */
+.quiz-box {
+    background: rgba(0,0,0,0.85);
+    border-radius: 15px;
+    padding: 30px;
+    width: 600px;
+    max-width: 95%;
+    text-align: center;
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar {
+    width: 100%;
+    background: #333;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#progress {
+    height: 100%;
+    background: #ff9900;
+    width: 0%;
+    transition: width 0.5s;
+}
+
+/* ===== TIMER ===== */
+#timer {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* ===== QUESTION ===== */
+#question {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* ===== IMAGE (PICTIONARY) ===== */
+.quiz-image img {
+    max-width: 100%;
+    max-height: 220px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* ===== OPTIONS ===== */
+#options label {
+    display: block;
+    background: #222;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#options label:hover {
+    background: #444;
+}
+
+#options input {
+    margin-right: 10px;
+}
+
+/* ===== ANSWER STATES ===== */
+.correct {
+    background: #00ff00 !important;
+    color: #000;
+}
+
+.incorrect {
+    background: #ff4444 !important;
+    color: #fff;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    background: #ff9900;
+    color: #000;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 5px 0;
+}
+
+/* ===== HINT ===== */
+#hint {
+    display: none;
+    margin-top: 10px;
+    background: #444;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ffdd00;
+    font-weight: bold;
+}
+
+/* ===== RESULT ===== */
+#result {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #ffdd00;
+}
+/* ===== BACK TO CATEGORIES BUTTON ===== */
+#backBtn {
+    display: inline-block;
+    background: #ff9900;       /* Orange background */
+    color: #000;               /* Black text */
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;     /* Remove underline for <a> */
+    cursor: pointer;
+    margin: 10px 5px 0;
+    transition: 0.3s;
+}
+
+#backBtn:hover {
+    opacity: 0.9;
+}

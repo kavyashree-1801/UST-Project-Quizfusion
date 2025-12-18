@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://interacty-prod-bucket.s3.amazonaws.com/media/831483.png') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+.quiz-box {
+    background:#222;
+    padding:30px;
+    width:600px;
+    max-width:90%;
+    border-radius:15px;
+    text-align:center;
+}
+
+h2 {
+    margin-bottom:20px;
+}
+
+#question {
+    font-size:20px;
+    margin:20px 0;
+}
+
+#options label {
+    display:block;
+    background:#333;
+    padding:12px;
+    margin:8px 0;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#options label.correct {
+    background:#00ff00;
+    color:#000;
+}
+
+#options label.incorrect {
+    background:#ff4444;
+}
+
+.btn {
+   display: inline-block;
+    background: #ff9900;       /* Orange background */
+    color: #000;               /* Black text */
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;     /* Remove underline for <a> */
+    cursor: pointer;
+    margin: 10px 5px 0;
+    transition: 0.3s;
+}
+
+#hint {
+    display:none;
+    background:#444;
+    padding:10px;
+    border-radius:8px;
+    margin-top:10px;
+    color:#ffdd00;
+}
+
+.progress-bar {
+    width:100%;
+    height:20px;
+    background:#333;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:15px;
+}
+
+#progress {
+    height:100%;
+    width:0;
+    background:#ff9900;
+}
+
+audio {
+    width:100%;
+    margin:15px 0;
+}
+#backBtn {
+    display: inline-block;
+    background: #ff9900;       /* Orange background */
+    color: #000;               /* Black text */
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;     /* Remove underline for <a> */
+    cursor: pointer;
+    margin: 10px 5px 0;
+    transition: 0.3s;
+}
+
+#backBtn:hover {
+    opacity: 0.9;
+}
