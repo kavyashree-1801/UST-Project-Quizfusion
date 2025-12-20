@@ -1,0 +1,66 @@
+:root{
+    --brand:#1a73e8; --card:#ffffff; --muted:#6b7280;
+}
+*{box-sizing:border-box;}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;           /* Needed for overlay */
+    color: #111827;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    /* Background image */
+    background: url('https://media.istockphoto.com/id/1356554393/photo/businessman-holding-smile-icon-for-the-best-evaluation-customer-satisfaction-concept.jpg?s=612x612&w=0&k=20&c=HXPwCqokplAtW8p8U2B9qLX2swWO5sPyrrA5a02TKDg=') 
+                center/cover fixed no-repeat;
+}
+
+/* Transparent white overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255, 255, 255, 0.5);  /* White with 50% opacity */
+    z-index: 0;
+}
+
+/* Make content appear above overlay */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+nav{
+    display:flex; justify-content:space-between; align-items:center; padding:14px 28px;
+    background:var(--brand); color:white; flex-wrap:wrap;
+}
+.logo{font-weight:700; font-size:20px;}
+.nav-links{display:flex; gap:20px; list-style:none; padding:0; margin:0;}
+.nav-links a{color:white; text-decoration:none; font-weight:600;}
+.nav-links a:hover{text-decoration:none;}
+.nav-links li a.active { color: #fff; border-bottom: 2px solid #fff; padding-bottom: 2px; }
+.nav-user { color:#ffeb3b; font-weight:600; display:flex; gap:10px; align-items:center; }
+.container{
+    max-width:800px; width:100%; margin:28px auto; padding:28px;
+}
+h2.section-title{ text-align:center; margin:4px 0 22px 0; color:var(--brand);}
+.card{ background:var(--card); padding:20px; border-radius:10px; box-shadow:0 4px 18px rgba(2,6,23,0.06); }
+.btn-primary{ background: var(--brand); border:none; }
+.btn-primary:hover{ background: #1665c1; }
+.alert{ margin-top:15px; }
+footer{ padding:12px; text-align:center; color:#ffffff; background:var(--brand); margin-top:auto; border-radius:0; }
+.profile-btn {
+    background: #fff;
+    color: #1a73e8;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.profile-btn:hover {
+    background: #e8ecff;
+}

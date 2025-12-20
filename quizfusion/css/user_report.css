@@ -1,0 +1,276 @@
+:root {
+    --brand: #1a73e8;
+    --card: #ffffff;
+    --muted: #6b7280;
+}
+
+/* =======================
+   GLOBAL
+======================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;           /* Needed for overlay */
+    color: #111827;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    /* Background image */
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20220314/pngtree-business-year-end-summary-synthetic-report-image_1048521.jpg') 
+                center/cover fixed no-repeat;
+}
+
+/* Transparent white overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255, 255, 255, 0.5);  /* White with 50% opacity */
+    z-index: 0;
+}
+
+/* Make content appear above overlay */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =======================
+   NAVBAR (UPDATED)
+======================= */
+nav {
+    background: var(--brand);
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.nav-links li a {
+    text-decoration: none !important;
+    color: #fff !important;   /* always white */
+    font-weight: 600;
+    transition: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+/* ACTIVE LINK */
+.nav-links li a.active {
+    text-decoration: underline !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+/* USER SECTION */
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* tiny space between text and button */
+}
+
+.email-text {
+    color: #ffeb3b;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.profile-btn {
+    background: #fff;
+    color: #1a73e8;
+    padding: 4px 10px;  /* smaller padding */
+    border-radius: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.profile-btn:hover {
+    background: #e8ecff;
+}
+
+
+/* =======================
+   MOBILE NAVBAR
+======================= */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        background: var(--brand);
+        flex-direction: column;
+        gap: 14px;
+        padding: 15px 0;
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-user {
+        display: none;
+    }
+}
+
+/* =======================
+   MAIN CONTAINER
+======================= */
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 28px auto;
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.08);
+    flex: 1;
+}
+
+h2.section-title {
+    text-align: center;
+    margin: 4px 0 28px 0;
+    color: var(--brand);
+}
+
+/* =======================
+   CARDS
+======================= */
+.cards {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.card {
+    background: var(--card);
+    padding: 18px 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 18px rgba(2, 6, 23, 0.06);
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.card p {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--brand);
+}
+
+/* =======================
+   TABLE / CHARTS
+======================= */
+.flex-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.chart-box,
+.table-box {
+    flex: 1 1 400px;
+    background: var(--card);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(2, 6, 23, 0.06);
+}
+
+.table-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table-box th,
+.table-box td {
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-box th {
+    background: var(--brand);
+    color: #fff;
+    font-weight: 600;
+}
+
+.table-box tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.table-box tr:hover {
+    background: #f1f5f9;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+    padding: 12px;
+    text-align: center;
+    color: #ffffff;
+    background: var(--brand);
+    margin-top: auto;
+}

@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+                url("https://media.istockphoto.com/id/497347644/photo/hand-pressing-register-now.jpg?s=612x612&w=0&k=20&c=XzXNw7_71cx23yPATWsSnYwGytZW-KU3eTpy3WCFQgw=") no-repeat center/cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register-card {
+    max-width: 420px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.eye {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.progress {
+    height: 8px;
+}

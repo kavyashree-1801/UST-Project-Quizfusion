@@ -1,0 +1,144 @@
+:root {
+    --brand: #1a73e8;
+    --card: #ffffff;
+}
+
+/* =====================
+   GLOBAL
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;           /* Needed for overlay */
+    color: #111827;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    /* Background image */
+    background: url('https://media.istockphoto.com/id/1221653457/photo/close-up-of-a-touchscreen-social-media-concept.jpg?s=612x612&w=0&k=20&c=thcgiLGWFoRNMrMiDXDGUGPy50i9jhXhiHSy-vokyqI=') 
+                center/cover fixed no-repeat;
+}
+
+/* Transparent white overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255, 255, 255, 0.5);  /* White with 50% opacity */
+    z-index: 0;
+}
+
+/* Make content appear above overlay */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+    background: var(--brand);
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+/* USER SECTION */
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.email-text {
+    color: #ffeb3b;
+    font-weight: 600;
+}
+
+.profile-btn {
+    background: #fff;
+    color: var(--brand);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.profile-btn:hover {
+    background: #e2e2e2;
+}
+
+/* =====================
+   MAIN CONTENT
+===================== */
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 28px auto;
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.08);
+    flex: 1;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 22px;
+    color: var(--brand);
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background: var(--brand);
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    font-size: 16px;
+}
